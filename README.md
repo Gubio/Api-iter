@@ -30,7 +30,6 @@
 
 #### Listar Usuários
     get '/users' ?company_id=
-#
     cnxs.iter.sc/v1/users/?company_id=1
 
 <details>
@@ -65,8 +64,7 @@
 
 #### Ver Usuário
     get '/users/:id'
-#
-    Get > cnxs.iter.sc/v1/users/1
+    cnxs.iter.sc/v1/users/1
 <details>
 <summary>Exemplo:</summary>
 
