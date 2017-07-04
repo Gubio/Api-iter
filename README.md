@@ -30,11 +30,14 @@
 
 #### Listar Usuários
     get '/users' ?company_id=
+#
     cnxs.iter.sc/v1/users/?company_id=1
 
 <details>
 <summary>Exemplo:</summary>
+
 ```json
+
 [
   {
     "id": 1,
@@ -62,11 +65,10 @@
 
 #### Ver Usuário
     get '/users/:id'
-
-<details>
-<summary>Exemplo:</summary>
 #
     Get > cnxs.iter.sc/v1/users/1
+<details>
+<summary>Exemplo:</summary>
 
 ```json
 {
