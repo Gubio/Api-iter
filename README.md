@@ -30,13 +30,43 @@
 
 #### Listar Usuários
     get '/users' ?company_id=
+    cnxs.iter.sc/v1/users/?company_id=1
+
+<details>
+<summary>Exemplo:</summary>
+```json
+[
+  {
+    "id": 1,
+    "company": 1,
+    "name": "John Doe",
+    "document": 87691457847,
+    "email": "johndoe@example.com",
+    "phone": "(048) 99161-8434",
+    "expire": "2019-01-01T00:00:00.000Z",
+    "language": "pt-BR"
+  },
+  {
+    "id": 2,
+    "company": 1,
+    "name": "Jane Doe",
+    "document": 16087637737,
+    "email": "janedoe@example.com",
+    "phone": "(048) 99616-9642",
+    "expire": "2020-01-19T02:00:00.000Z",
+    "language": "pt-BR"
+  }
+]
+```
+</details>
 
 #### Ver Usuário
     get '/users/:id'
-#
-    Get >  cnxs.iter.sc/v1/users/2
+
 <details>
 <summary>Exemplo:</summary>
+#
+    Get > cnxs.iter.sc/v1/users/1
 
 ```json
 {
