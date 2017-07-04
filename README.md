@@ -36,7 +36,7 @@
 #
     Get >  cnxs.iter.sc/v1/users/2
 <details>
-<summary>More GIFs [~3 MB]</summary>
+<summary>Exemplo:</summary>
 
 ```json
 {
