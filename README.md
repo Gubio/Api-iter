@@ -116,14 +116,6 @@
 ```
 </details>
 
-#### Cadastrar Usuário
-    post '/users'
-
-#### Editar Usuário
-    put '/users/:id'
-#### Apagar Usuário
-    delete '/users/:id' 
-
 ## Model Company - Cliente
 | Attribute |Type | extra |
 | ------ | ------ | ------ |
@@ -136,8 +128,45 @@
 
 #### Listar Empresas
     get '/companies'
+    cnxs.iter.sc/v1/companies
+
+<details>
+<summary>Exemplo:</summary>
+
+```json
+[
+  {
+    "id": 1,
+    "name": "One Telemetria"
+  },
+  {
+    "id": 2,
+    "name": "Two Telemetria"
+  }
+]
+```
+</details>
+
 #### Ver Empresa
-    put '/companies/:id'
+    get '/companies/:id'
+    cnxs.iter.sc/v1/companies/1
+
+<details>
+<summary>Exemplo:</summary>
+
+```json
+{
+  "id": 1,
+  "name": "One Telemetria",
+  "document": "56714555000150",
+  "email": "contact@example.com",
+  "phone": "(48) 3223-5726",
+  "owner": 1,
+  "financial": 1
+}
+```
+</details>
+
 #### Cadastrar Empresa
     post '/companies'
 #### Editar Empresa
