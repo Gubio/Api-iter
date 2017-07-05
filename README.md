@@ -25,7 +25,7 @@
     "id": 1,
     "name": "John Doe",
     "company_id": 1,
-    "avatar": "http://res.cloudinary.com/iter-telemetria/image/upload/avatar.png"
+    "avatar": "http://res.cloudinary.com/iter-telemetria/image/upload/avatar.jpg"
   },
   "access_profile": {
     "block_vehicles": true,
