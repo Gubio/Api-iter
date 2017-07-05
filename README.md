@@ -14,7 +14,28 @@
 # Autenticação por usuario/senha
     cnxs.iter.sc/v1/sign_in
     Basic Access Authentication - usuário e senha
+<details>
+<summary>Exemplo:</summary>
 
+```json
+{
+  "token": "MqLgkaAX3YD2KB22W8ZK",
+  "realtime_channel_name": "3f500ca078d5799617e5e7c40a4fed38c41f270c118d1aa218c8c2eea5e900a2",
+  "user": {
+    "id": 1,
+    "name": "John Doe",
+    "company_id": 1,
+    "avatar": "http://res.cloudinary.com/iter-telemetria/image/upload/avatar.png"
+  },
+  "access_profile": {
+    "block_vehicles": true,
+    "lock_trunk": true,
+    "monitoring": true,
+    "taxi": false
+  }
+}
+```
+</details>
 ## Model User - Usuário
 
 | Attribute |Type | extra |
@@ -96,6 +117,7 @@
 
 #### Cadastrar Usuário
     post '/users'
+
 #### Editar Usuário
     put '/users/:id'
 #### Apagar Usuário
