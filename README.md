@@ -167,13 +167,6 @@
 ```
 </details>
 
-#### Cadastrar Empresa
-    post '/companies'
-#### Editar Empresa
-    put '/companies/:id'
-#### Apagar Empresa
-    delete '/companies/:id' 
-
 ## Model Vehicle - Veículo
 | Attribute |Type | extra |
 | ------ | ------ | ------ |
