@@ -36,6 +36,7 @@
 }
 ```
 </details>
+
 ## Model User - Usuário
 
 | Attribute |Type | extra |
