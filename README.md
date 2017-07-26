@@ -174,11 +174,6 @@
 <details>
 <summary>Exemplo:</summary>
 
-  POST /v1/companies/ HTTP/1.1
-  Host: cnxs.iter.sc
-  Authorization: Bearer xxxxxxxxxxxxxxxxxxxx
-  Content-Type: application/json
-  Cache-Control: no-cache
 ```json
 { "company": { "name": "Stark Industries", "document": "32991672000100", "email": "hi@stark.com",  "phone": "06232494747", "owner_id": 1, "financial": 1 } }
 ```
