@@ -167,6 +167,35 @@
 ```
 </details>
 
+#### Criar Empresa
+    post '/companies/'
+    cnxs.iter.sc/v1/companies/
+
+<details>
+<summary>Exemplo:</summary>
+```json
+ # POST /v1/companies/ HTTP/1.1
+ # Host: cnxs.iter.sc
+ # Authorization: Bearer xxxxxxxxxxxxxxxxxxxx
+ # Content-Type: application/json
+ # Cache-Control: no-cache
+ 
+{ "company": { "name": "Stark Industries", "document": "32991672000100", "email": "hi@stark.com",  "phone": "06232494747", "owner_id": 1, "financial": 1 } }
+```
+
+```json
+{
+  "id": 180,
+  "name": "Stark Industries",
+  "document": "32991672000100",
+  "email": "hi@stark.com",
+  "phone": "06232494747",
+  "owner": 1,
+  "financial": 1
+}
+```
+
+</details>
 ## Model Vehicle - Veículo
 | Attribute |Type | extra |
 | ------ | ------ | ------ |
