@@ -126,6 +126,7 @@
 ```json
 { "user": { "email": "johndoe@example.com" ,"username": "johndoe", "name": "John Doe", "document": "87691457847", "expire_date": "2019-01-01 00:00:00", "phone": "048991618434", "language": "pt-BR", "time_zone": "Brasilia", "company_id": 1, "password": "TheNorthRemembers", "password_confirmation": "TheNorthRemembers", "access_level": 0, "zipcode": "88015203", "street": "R. Menino Deus", "number": "173", "district": "Centro", "city": "Florianópolis", "state": "Santa Catarina", "active": true   }}
 ```
+
 </details>
 
 ## Model Company - Cliente
@@ -177,6 +178,7 @@
   "financial": 1
 }
 ```
+
 </details>
 
 #### Criar Empresa
@@ -187,9 +189,7 @@
 <summary>Exemplo:</summary>
 
 ```json
-
 { "company": { "name": "Stark Industries", "document": "32991672000100", "email": "hi@stark.com",  "phone": "06232494747", "owner_id": 1, "financial": 1 } }
-
 ```
 
 ```json
@@ -222,8 +222,76 @@
 
 #### Listar Veículos
     get '/vehicles' ?company_id=
+    cnxs.iter.sc/v1/vehicles/?company_id=1
+
+<details>
+<summary>Exemplo:</summary>
+
+```json
+[
+  {
+    "id": 1,
+    "name": "DeLorean",
+    "description": "",
+    "company_id": 1,
+    "user_id": 1,
+    "plate": "AAA111",
+    "mark": "DeLorean",
+    "car_model": "DMC-12",
+    "year": "1982",
+    "color": "gray",
+    "fuel": "gasoline",
+    "fipe": null,
+    "active": true
+  },
+  {
+    "id": 2,
+    "name": "V8 Interceptor",
+    "description": "",
+    "company_id": 1,
+    "user_id": 2,
+    "plate": "BBB2222",
+    "mark": "Ford",
+    "car_model": "Falcon XB GT Coupe",
+    "year": "1973",
+    "color": "black",
+    "fuel": "gasoline",
+    "fipe": null,
+    "active": true
+  }
+ ]
+ ```
+</details>
+
 #### Ver Veículo
     get '/vehicles/:id'
+    cnxs.iter.sc/v1/vehicles/1
+    
+<details>
+<summary>Exemplo:</summary>
+
+```json
+[
+  {
+    "id": 1,
+    "name": "DeLorean",
+    "description": "",
+    "company_id": 1,
+    "user_id": 1,
+    "plate": "AAA111",
+    "mark": "DeLorean",
+    "car_model": "DMC-12",
+    "year": "1982",
+    "color": "gray",
+    "fuel": "gasoline",
+    "fipe": null,
+    "active": true
+  }
+ ]
+ ```
+ 
+</details>
+    
 #### Cadastrar Veículo
     post '/vehicles'
 #### Editar Veículo
