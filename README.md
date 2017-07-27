@@ -496,5 +496,19 @@
 
 #### Editar Rastreador
     put '/trackers/:uin'
+    cnxs.iter.sc/v1/trackers/0000000000001
+    
+<details>
+<summary>Exemplo:</summary>
+
+```json
+
+{ "product": {  "uin": "0000000000001", "name": "DeLorean", "company_id": 1, "owner_id": 1, "plate": "AAA111", "mark": "DeLorean", "year": "1982", "color": "gray","active": true } }
+ 
+ ```
+ 
+</details>
+
 #### Apagar Rastreador 
     delete  '/trackers/:id'
+    cnxs.iter.sc/v1/trackers/0000000000001
