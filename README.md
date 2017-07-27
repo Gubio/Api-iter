@@ -339,6 +339,96 @@
 
 #### Listar Rastreadores
     get '/trackers' ?company_id=
+    cnxs.iter.sc/v1/trackers/?company_id=1
+    
+<details>
+<summary>Exemplo:</summary>
+
+```json
+
+{
+  "total_count": 2,
+  "page_count": 2,
+  "page": 1,
+  "data": [
+    {
+      "id": 01,
+      "uin": 0000000000001,
+      "company_id": 1,
+      "vehicle": {
+        "name": "DeLorean",
+        "type": "car",
+        "plate": "AAA111"
+      },
+      "actions": {
+        "vehicle_lock": {
+          "enabled": false,
+          "labels": {
+            "on": "Bloquear Veículo",
+            "off": "Desbloquear Veículo"
+          }
+        },
+        "trunk_lock": {
+          "enabled": false,
+          "labels": {
+            "on": "Bloquear Baú",
+            "off": "Desbloquear Baú"
+          }
+        }
+      },
+      "lat": 0,
+      "lng": 0,
+      "bearing": 0,
+      "speed": 0,
+      "ignition": null,
+      "temperature": null,
+      "gps_time": null,
+      "time_pc": null,
+      "vehicle_locked": null,
+      "trunk_locked": null
+    },
+    {
+      "id": 02,
+      "uin": 0000000000002,
+      "company_id": 1,
+      "vehicle": {
+        "name": "V8 Interceptor",
+        "type": "car",
+        "plate": "BBB2222"
+      },
+      "actions": {
+        "vehicle_lock": {
+          "enabled": false,
+          "labels": {
+            "on": "Bloquear Veículo",
+            "off": "Desbloquear Veículo"
+          }
+        },
+        "trunk_lock": {
+          "enabled": false,
+          "labels": {
+            "on": "Bloquear Baú",
+            "off": "Desbloquear Baú"
+          }
+        }
+      },
+      "lat": 0,
+      "lng": 0,
+      "bearing": 0,
+      "speed": 0,
+      "ignition": null,
+      "temperature": null,
+      "gps_time": null,
+      "time_pc": null,
+      "vehicle_locked": null,
+      "trunk_locked": null
+    }]
+}
+ ```
+ 
+</details>
+
+   
 #### Ver Rastreador
     get '/trackers/:uin'
 #### Cadastrar Rastreador
