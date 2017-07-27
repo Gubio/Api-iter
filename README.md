@@ -129,6 +129,25 @@
 
 </details>
 
+#### Editar Usuário
+    put '/users/:id'
+    cnxs.iter.sc/v1/users/1
+
+<details>
+<summary>Exemplo:</summary>
+
+```json
+
+{ "user": { "email": "johndoe@example.com" ,"username": "johndoe", "name": "John Doe", "document": "87691457847", "expire_date": "2019-01-01 00:00:00", "phone": "048991618434", "language": "pt-BR", "time_zone": "Brasilia", "company_id": 1, "password": "TheNorthRemembers", "password_confirmation": "TheNorthRemembers", "access_level": 0, "zipcode": "88015203", "street": "R. Menino Deus", "number": "173", "district": "Centro", "city": "Florianópolis", "state": "Santa Catarina", "active": true   }}
+
+ ```
+ 
+</details>
+
+#### Apagar Usuário 
+    delete  '/users/:id'
+    cnxs.iter.sc/v1/users/1
+    
 ## Model Company - Cliente
 | Attribute |Type | extra |
 | ------ | ------ | ------ |
@@ -204,6 +223,26 @@
 }
 ```
 </details>
+
+#### Editar Empresa
+    put '/companies/:id'
+    cnxs.iter.sc/v1/companies/1
+
+<details>
+<summary>Exemplo:</summary>
+
+```json
+
+{ "company": { "name": "Stark Industries", "document": "32991672000100", "email": "hi@stark.com",  "phone": "06232494747", "owner_id": 1, "financial": 1 } }
+
+ ```
+ 
+</details>
+
+#### Apagar Empresa 
+    delete  '/companies/:id'
+    cnxs.iter.sc/v1/companies/1
+
 
 ## Model Vehicle - Veículo
 | Attribute |Type | extra |
