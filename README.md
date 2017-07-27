@@ -294,6 +294,20 @@
     
 #### Cadastrar Veículo
     post '/vehicles'
+    cnxs.iter.sc/v1/vehicles/
+
+<details>
+<summary>Exemplo:</summary>
+
+```json
+
+{ "vehicle": {  "name": "DeLorean", "description": " ", "company_id": 1, "user_id": 1, "plate": "AAA111", "mark": "DeLorean", "car_model": "DMC-12", "year": "1982", "color": "gray", "fuel": "gasoline", "fipe": "333", "active": true } }
+
+ ```
+ 
+</details>
+
+    
 #### Editar Veículo
     put '/vehicles/:id'
 #### Apagar Veículo 
