@@ -347,8 +347,8 @@
 ```json
 
 {
-  "total_count": 2,
-  "page_count": 2,
+  "total_count": 207,
+  "page_count": 207,
   "page": 1,
   "data": [
     {
@@ -431,8 +431,69 @@
    
 #### Ver Rastreador
     get '/trackers/:uin'
+    cnxs.iter.sc/v1/trackers/0000000000001
+    
+<details>
+<summary>Exemplo:</summary>
+
+```json
+[
+   {
+      "id": 01,
+      "uin": 0000000000001,
+      "company_id": 1,
+      "vehicle": {
+        "name": "DeLorean",
+        "type": "car",
+        "plate": "AAA111"
+      },
+      "actions": {
+        "vehicle_lock": {
+          "enabled": false,
+          "labels": {
+            "on": "Bloquear Veículo",
+            "off": "Desbloquear Veículo"
+          }
+        },
+        "trunk_lock": {
+          "enabled": false,
+          "labels": {
+            "on": "Bloquear Baú",
+            "off": "Desbloquear Baú"
+          }
+        }
+      },
+      "lat": 0,
+      "lng": 0,
+      "bearing": 0,
+      "speed": 0,
+      "ignition": null,
+      "temperature": null,
+      "gps_time": null,
+      "time_pc": null,
+      "vehicle_locked": null,
+      "trunk_locked": null
+    }
+ ]
+ ```
+ 
+</details>
+
 #### Cadastrar Rastreador
     post '/trackers'
+    cnxs.iter.sc/v1/trackers/
+    
+<details>
+<summary>Exemplo:</summary>
+
+```json
+
+{ "product": {  "uin": "0000000000001", "name": "DeLorean", "company_id": 1, "owner_id": 1, "plate": "AAA111", "mark": "DeLorean", "year": "1982", "color": "gray","active": true } }
+ 
+ ```
+ 
+</details>
+
 #### Editar Rastreador
     put '/trackers/:uin'
 #### Apagar Rastreador 
