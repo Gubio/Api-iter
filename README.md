@@ -310,8 +310,22 @@
     
 #### Editar Veículo
     put '/vehicles/:id'
+    cnxs.iter.sc/v1/vehicles/1
+
+<details>
+<summary>Exemplo:</summary>
+
+```json
+
+{ "vehicle": {  "name": "DeLorean", "description": " ", "company_id": 1, "user_id": 1, "plate": "AAA111", "mark": "DeLorean", "car_model": "DMC-12", "year": "1982", "color": "gray", "fuel": "gasoline", "fipe": "333", "active": true } }
+
+ ```
+ 
+</details>
+    
 #### Apagar Veículo 
     delete  '/vehicles/:id'
+    cnxs.iter.sc/v1/vehicles/1
 
 ## Model Tracker - Rastreador
 | Attribute |Type | extra |
