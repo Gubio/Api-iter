@@ -549,5 +549,5 @@
 </details>
 
 #### Apagar Rastreador 
-    delete  '/trackers/:id'
+    delete  '/trackers/:uin'
     cnxs.iter.sc/v1/trackers/0000000000001
